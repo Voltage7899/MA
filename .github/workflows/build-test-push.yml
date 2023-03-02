@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: Docker Image CI
 
 on:
@@ -35,6 +34,5 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push tag to Docker Hub
         run: docker push voltage789/mic:latest
-=======
->>>>>>> f083d93 (Create build-test-push.yml)
+
 
