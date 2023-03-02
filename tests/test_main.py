@@ -29,5 +29,5 @@ class TestDociments():
     def test_fill_get_Docs(self):
         response = requests.get(f'{api_url}/doc/docs')
         assert response.status_code == 500
-        
+
 
