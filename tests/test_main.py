@@ -16,13 +16,13 @@ class TestDociments():
     def test_post_Doc(self):
         body = {"title": "shittitle", "body": "shitBody"}
         response = requests.post("http://localhost:8000/doc/docs",json=body)
-        assert response.status_code == 500
+        assert response.status_code == 405
 
 
 
     def test_get_id_Doc(self):
         response = requests.get(f'{api_url}/doc/docs/0')
-        assert response.status_code == 404
+        assert response.status_code == 200
 
 
 
