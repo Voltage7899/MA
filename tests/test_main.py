@@ -10,7 +10,7 @@ class TestDociments():
 
     def test_empty_get_Docs(self):
         response = requests.get("http://localhost:8000/doc/docs")
-        assert response.status_code == 500
+        assert response.status_code == 200
 
 
     def test_post_Doc(self):
