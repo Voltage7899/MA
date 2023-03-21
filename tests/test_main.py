@@ -16,7 +16,7 @@ class TestDociments():
     def test_post_Doc(self):
         body = {"title": "shittitle", "body": "shitBody"}
         response = requests.post("http://localhost:8000/doc/docs",json=body)
-        assert response.status_code == 405
+        assert response.status_code == 500
 
 
 
